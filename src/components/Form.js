@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const Form = ({ handleSubmit, history }) => {
   const [searchEntry, setSearchEntry] = useState("");
+
   // update search text state
   const updateSearchInput = e => {
     setSearchEntry(e.target.value);
@@ -9,7 +10,9 @@ const Form = ({ handleSubmit, history }) => {
   return (
     <form
       className="search-form"
-      onSubmit={e => handleSubmit(e, history, searchEntry)}
+      onSubmit={e => {
+        handleSubmit(e, history, searchEntry.slice(0, -1))
+      }}
     >
       <input
         type="text"
@@ -20,7 +23,7 @@ const Form = ({ handleSubmit, history }) => {
       />
       <button
         type="submit"
-        className={`search-button ${searchEntry.trim() ? "active" : null}`}
+        className={`search-button ${!searchEntry.trim() ? "active" : null}`}
         disabled={!searchEntry.trim()}
       >
         <svg height="32" width="32">
