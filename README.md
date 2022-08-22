@@ -19,7 +19,7 @@ Run this command on the terminal to execute the regression pack and display the 
 After the run finishes on the terminal, there is a dashboard link provided at the end on the run.
 Copy paste this link in the browser and use the below credentials to login to the cypress dashboard and view the results -
 
-mvcypressdashboard@gmail.com/Dashboard123
+mvcypressdashboard@gmail.com/Dashboard123 (dashboard is configured as private and not public)
 
 OR 
 
