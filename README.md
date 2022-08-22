@@ -1,7 +1,5 @@
 # Snap Shot Regression Pack
 
-Build and Run the code and test for bugs, provide a document of all your tests and your findings.
-  
 ### Summary
 
 Snap Shot is a gallery created using React,React Hooks, React Router and Context API. The Routes were setup for four default pages and a search page. Also the images were displayed using the Flickr API and axios to fetch data.
@@ -34,20 +32,20 @@ OR
 
 ### E2E Journeys
 
-### Validate default pages
+#### Validate default pages
 
 1. Has default CTA buttons
 2. Should be able to click on one of those default CTA
 3. Make sure the url is correct when on relevant page 
 4. Make sure the heading is right and represents what was clicked
 
-### Validate home page
+#### Validate home page
 
 1. Click on the app name/header, should take you to the home page (check url)
 2. Page not found should not be returned
 3. Searcher should be visible
 
-### Validate search page
+#### Validate search page
 
 1. Click on the search bar, enter a text and click on the search icon.
 2. Text input should match the text showing on the search bar
