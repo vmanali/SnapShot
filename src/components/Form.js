@@ -20,11 +20,13 @@ const Form = ({ handleSubmit, history }) => {
         placeholder="Search..."
         onChange={updateSearchInput}
         value={searchEntry}
+        data-e2e="searchText"
       />
       <button
         type="submit"
         className={`search-button ${!searchEntry.trim() ? "active" : null}`}
         disabled={!searchEntry.trim()}
+        data-e2e="searchSubmit"
       >
         <svg height="32" width="32">
           <path
