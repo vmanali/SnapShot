@@ -12,13 +12,26 @@ Snap Shot is a gallery created using React,React Hooks, React Router and Context
 
 ### How to run Cypress
 
-Run this command on the terminal to execute all e2e tests configured as part of regression pack -
+Run this command on the terminal to execute the regression pack and display the test results on the cypress dashboard -
+
+- `npx cypress run --record --key e92510be-a37f-4ac5-ba0e-60c0be92d422`
+
+After the run finishes on the terminal, there is a dashboard link provided at the end on the run.
+Copy paste this link in the browser and use the below credentials to login to the cypress dashboard and view the results -
+
+mvcypressdashboard@gmail.com/Dashboard123
+
+OR 
+
+Use this command on the terminal to execute all e2e tests configured as part of regression pack -
 
 - `Cypress_tags=regression npx cypress run`
 
 Test results are displayed on the terminal and screenshots and videos are also created under the path cypress/screenshots and cypress/videos after executing this run
 
 OR
+
+Simply run -
 
 - `npm run cypress:open`
 
